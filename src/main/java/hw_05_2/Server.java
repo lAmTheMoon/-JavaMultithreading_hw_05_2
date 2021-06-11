@@ -36,8 +36,6 @@ public class Server implements Runnable {
                     socketChannel.write(ByteBuffer.wrap(("Server say: " + cleanClientInput)
                             .getBytes(StandardCharsets.UTF_8)));
                 }
-            } catch (IOException e) {
-                e.printStackTrace();
             }
         } catch (IOException e) {
             e.printStackTrace();
